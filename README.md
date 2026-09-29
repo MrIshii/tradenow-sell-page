@@ -7,6 +7,10 @@ walkaround video, close-up photos, clickable damage spots, and the
 
 This repository has two ways to put the page live. Use one.
 
+## Live demo
+
+https://mrishii.github.io/tradenow-sell-page/ (GitHub Pages, served from `docs/`)
+
 ## Try it locally
 
 Download the repository (Code → Download ZIP), then in the `docs/` folder run
