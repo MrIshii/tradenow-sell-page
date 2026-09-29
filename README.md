@@ -7,9 +7,10 @@ walkaround video, close-up photos, clickable damage spots, and the
 
 This repository has two ways to put the page live. Use one.
 
-## Live demo
+## Try it locally
 
-GitHub Pages serves the `docs/` folder: https://mrishii.github.io/tradenow-sell-page/
+Download the repository (Code → Download ZIP), then in the `docs/` folder run
+`python3 -m http.server 8000` and open http://localhost:8000.
 
 ## Option 1: `docs/` (any web server)
 
