@@ -62,8 +62,10 @@ These must stay available, or those parts of the page break:
 - **Sample data:** the vehicle (2022 Mazda CX-50), prices, offer and pickup
   times are sample data. Nothing is sent to a server or saved beyond the
   visitor's own browser.
-- **Camera:** on a phone the walkaround uses the real camera after the visitor
-  allows it. Without a camera it plays the sample walkaround video.
+- **Camera:** this is a demo, so it never turns on the real camera. "Allow camera
+  and start" plays a sample walkaround video as the camera feed, and the close-up
+  photos show sample pictures. To use the real camera, set `DEMO_CAMERA` to
+  `false` in `WalkaroundScreen.tsx` (Figma Make file) and rebuild.
 - **"Text me a link"** opens the visitor's messaging app with the link filled
   in; it does not send a text by itself.
 - **Updating:** after changing the Make file, this package has to be rebuilt.
