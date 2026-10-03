@@ -1,6 +1,6 @@
 # TradeNow "Sell or trade your car" page
 
-Built October 2, 2026 from the current version of the Figma Make file
+Built October 3, 2026 from the current version of the Figma Make file
 ("Auto dealer mockup"): 3 steps, TradeNow logo, 360° spin in four colors,
 walkaround video, close-up photos, clickable damage spots, and the
 "continue on your phone" link.
@@ -26,7 +26,8 @@ TradeNow home page: Exit (✕) and the menu's Home open it, as in the Figma demo
    - At the site root: the page opens at `https://your-domain/`
    - In a folder, for example `sell/`: it opens at `https://your-domain/sell/`
 2. Serve it over **https**. Browsers only allow the camera on https pages.
-3. Open the address. The flow starts on the Sell screen.
+3. Open the address. The site opens on the TradeNow home page; Sell your car
+   starts from there.
 
 Steps show in the address after a `#` (for example `…/#/sell/vehicle`). This is
 why no server rules are needed: refreshing on any step works on any host
