@@ -18,7 +18,8 @@ Download the repository (Code → Download ZIP), then in the `docs/` folder run
 
 ## Option 1: `docs/` (any web server)
 
-A complete static web page. Nothing to install or configure.
+A complete static web page. Nothing to install or configure. It includes the
+TradeNow home page: Exit (✕) and the menu's Home open it, as in the Figma demo.
 
 1. Upload **everything inside `docs/`** (the `index.html` file and the
    `assets` folder, keeping the folder structure) to your server.
@@ -46,6 +47,7 @@ so this only works after that.
    with the real script address.
 4. Preview, then publish. The flow covers the whole page (the site's own
    header and footer are hidden on this page only).
+   Exit (✕) and the menu's Home load the site's own home page (`/`).
 
 ## What the page loads from other places
 
