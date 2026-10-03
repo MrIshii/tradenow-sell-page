@@ -7,6 +7,17 @@ walkaround video, close-up photos, clickable damage spots, and the
 
 This repository has two ways to put the page live. Use one.
 
+## Making changes
+
+The demo's source code is in `app/`. Every change to `app/` on the `main`
+branch rebuilds the site automatically (GitHub Actions → "Build demo") and
+updates `docs/` and `solid-embed/`; the live page follows about a minute later.
+
+- Small text edits: open the file on github.com, click the pencil, commit.
+- Bigger edits: change `app/` locally (or ask Claude) and push.
+- Check which build a page is showing: view the page source and look for
+  `tradenow-build`, or open the browser console.
+
 ## Live demo
 
 https://mrishii.github.io/tradenow-sell-page/ (GitHub Pages, served from `docs/`)

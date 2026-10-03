@@ -1,0 +1,42 @@
+# Rebuilds the demo whenever the source in app/ changes, then commits the
+# rebuilt website (docs/) and Solid# script. GitHub Pages serves docs/, so the
+# live page updates about a minute later.
+name: Build demo
+
+on:
+  push:
+    branches: [main]
+    paths: ["app/**", ".github/workflows/deploy.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-demo
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.9.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install
+        working-directory: app
+        run: pnpm install --frozen-lockfile
+      - name: Build
+        run: bash app/scripts/build-pages.sh
+      - name: Commit the rebuilt site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs solid-embed
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Rebuild demo from app/ ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git push

@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><script>
+// LOCAL TEST ONLY — presets the confirmed color, then opens a screen. Not for Make.
+const q=new URLSearchParams(location.search);
+const k="axio_sell_v1"; let s={}; try{s=JSON.parse(localStorage.getItem(k)||"{}")}catch(e){}
+s.vehicleColor=q.get("color")||"Machine Gray"; localStorage.setItem(k,JSON.stringify(s));
+location.replace(q.get("go")||"/sell/vehicle");
+</script>

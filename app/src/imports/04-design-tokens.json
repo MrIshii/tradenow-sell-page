@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "name": "AutoNexus Exportable Design System",
+    "created": "2026-06-19",
+    "targets": [
+      "Claude Design",
+      "Figma Make",
+      "Implementation"
+    ]
+  },
+  "brand": {
+    "name": "AutoNexus",
+    "website": "axioauto.com",
+    "description": "Utah car dealership with large new and used inventory from affordable to premium vehicles."
+  },
+  "color": {
+    "primary": {
+      "name": "Axio Graphite",
+      "value": "#101820",
+      "figmaStyle": "Axio/Primary/Axio Graphite"
+    },
+    "secondary": {
+      "name": "Axio Blue",
+      "value": "#008FDB",
+      "figmaStyle": "Axio/Secondary/Axio Blue"
+    },
+    "tertiary": {
+      "name": "Wasatch Gold",
+      "value": "#C58B2A",
+      "figmaStyle": "Axio/Tertiary/Wasatch Gold"
+    },
+    "error": {
+      "name": "Signal Red",
+      "value": "#C1121F",
+      "figmaStyle": "Axio/Error/Signal Red"
+    },
+    "neutral": {
+      "name": "Showroom White",
+      "value": "#F5F7FA",
+      "figmaStyle": "Axio/Neutral/Showroom White"
+    },
+    "neutralVariant": {
+      "name": "Silver Lot",
+      "value": "#D9E2EC",
+      "figmaStyle": "Axio/Neutral Variant/Silver Lot"
+    },
+    "extended": {
+      "success": {
+        "name": "Pine Green",
+        "value": "#2F6F3E",
+        "figmaStyle": "Axio/Extended/Success/Pine Green"
+      }
+    }
+  },
+  "typography": {
+    "fontFamilies": {
+      "display": "Montserrat, Inter, system-ui, sans-serif",
+      "body": "Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    },
+    "textStyles": {
+      "Display/XL": {
+        "font": "Montserrat",
+        "size": 64,
+        "lineHeight": 68,
+        "weight": 800
+      },
+      "Display/LG": {
+        "font": "Montserrat",
+        "size": 56,
+        "lineHeight": 60,
+        "weight": 800
+      },
+      "Display/MD": {
+        "font": "Montserrat",
+        "size": 48,
+        "lineHeight": 54,
+        "weight": 700
+      },
+      "Headline/LG": {
+        "font": "Montserrat",
+        "size": 40,
+        "lineHeight": 46,
+        "weight": 700
+      },
+      "Headline/MD": {
+        "font": "Montserrat",
+        "size": 32,
+        "lineHeight": 40,
+        "weight": 700
+      },
+      "Headline/SM": {
+        "font": "Montserrat",
+        "size": 28,
+        "lineHeight": 36,
+        "weight": 700
+      },
+      "Title/LG": {
+        "font": "Inter",
+        "size": 24,
+        "lineHeight": 32,
+        "weight": 700
+      },
+      "Title/MD": {
+        "font": "Inter",
+        "size": 20,
+        "lineHeight": 28,
+        "weight": 600
+      },
+      "Title/SM": {
+        "font": "Inter",
+        "size": 18,
+        "lineHeight": 24,
+        "weight": 600
+      },
+      "Body/LG": {
+        "font": "Inter",
+        "size": 18,
+        "lineHeight": 30,
+        "weight": 400
+      },
+      "Body/MD": {
+        "font": "Inter",
+        "size": 16,
+        "lineHeight": 26,
+        "weight": 400
+      },
+      "Body/SM": {
+        "font": "Inter",
+        "size": 14,
+        "lineHeight": 22,
+        "weight": 400
+      },
+      "Label/LG": {
+        "font": "Inter",
+        "size": 16,
+        "lineHeight": 20,
+        "weight": 700
+      },
+      "Label/MD": {
+        "font": "Inter",
+        "size": 14,
+        "lineHeight": 18,
+        "weight": 600
+      },
+      "Label/SM": {
+        "font": "Montserrat",
+        "size": 12,
+        "lineHeight": 16,
+        "weight": 700
+      }
+    }
+  },
+  "spacing": {
+    "1": 4,
+    "2": 8,
+    "3": 12,
+    "4": 16,
+    "5": 24,
+    "6": 32,
+    "7": 40,
+    "8": 48,
+    "9": 64,
+    "10": 80,
+    "11": 96,
+    "12": 120
+  },
+  "radius": {
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 24,
+    "pill": 999
+  },
+  "shadow": {
+    "sm": "0 1px 2px rgba(16, 24, 32, 0.08)",
+    "md": "0 8px 24px rgba(16, 24, 32, 0.12)",
+    "lg": "0 18px 48px rgba(16, 24, 32, 0.18)",
+    "blue": "0 10px 30px rgba(0, 143, 219, 0.25)"
+  },
+  "components": {
+    "buttonPrimary": {
+      "background": "#008FDB",
+      "text": "#FFFFFF",
+      "hover": "#00648F",
+      "radius": 12,
+      "minHeight": 44,
+      "font": "Inter",
+      "weight": 700
+    },
+    "buttonSecondary": {
+      "background": "#F5F7FA",
+      "text": "#101820",
+      "border": "#D9E2EC",
+      "radius": 12,
+      "minHeight": 44,
+      "font": "Inter",
+      "weight": 700
+    },
+    "vehicleCard": {
+      "background": "#FFFFFF",
+      "border": "#D9E2EC",
+      "radius": 16,
+      "shadow": "md"
+    },
+    "badges": {
+      "greatValue": {
+        "background": "#008FDB",
+        "text": "#FFFFFF"
+      },
+      "premiumSelection": {
+        "background": "#C58B2A",
+        "text": "#101820"
+      },
+      "verifiedVehicle": {
+        "background": "#2F6F3E",
+        "text": "#FFFFFF"
+      },
+      "priceDrop": {
+        "background": "#C1121F",
+        "text": "#FFFFFF"
+      },
+      "newArrival": {
+        "background": "#101820",
+        "text": "#FFFFFF"
+      },
+      "lowMileage": {
+        "background": "#D9E2EC",
+        "text": "#101820"
+      }
+    }
+  }
+}
