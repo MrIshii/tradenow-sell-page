@@ -1,6 +1,6 @@
 # TradeNow "Sell or trade your car" page
 
-Built September 29, 2026 from the current version of the Figma Make file
+Built October 2, 2026 from the current version of the Figma Make file
 ("Auto dealer mockup"): 3 steps, TradeNow logo, 360° spin in four colors,
 walkaround video, close-up photos, clickable damage spots, and the
 "continue on your phone" link.
